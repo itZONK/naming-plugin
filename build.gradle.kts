@@ -51,6 +51,8 @@ tasks {
     }
 
     withType<Jar> {
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
         from("src/main/resources") {
             include("**/*")
             includeEmptyDirs = false
