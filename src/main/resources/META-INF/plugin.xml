@@ -7,12 +7,57 @@
     <icon path="/icons/rename_logo.png"/>
 
     <description><![CDATA[
-              <!-- 描述内容保持不变 -->
-    ]]></description>
+              <h2>Intelligent Renaming - AI-based Variable Naming Assistant</h2>
+              <p>A powerful plugin based on Alibaba Cloud's large language model that helps developers quickly generate standardized variable and function names from Chinese descriptions.</p>
 
+              <h2>智能重命名 - 基于AI的变量命名助手</h2>
+              <p>智能重命名是一个基于阿里云大模型的变量命名助手插件，帮助开发者根据中文描述快速生成符合规范的变量名和函数名。</p>
+
+              <h3>主要功能：</h3>
+              <ul>
+                <li><strong>智能命名</strong>：根据中文描述自动生成规范的驼峰命名变量名</li>
+                <li><strong>自定义提示词</strong>：支持自定义AI提示词模板，精确控制命名风格</li>
+                <li><strong>模型选择</strong>：支持选择不同的阿里云大模型</li>
+                <li><strong>便捷操作</strong>：右键菜单快速访问，提升开发效率</li>
+              </ul>
+
+              <h3>使用场景：</h3>
+              <ul>
+                <li>为变量或函数快速生成符合规范的英文名称</li>
+                <li>将中文注释或需求文档中的描述转换为代码中的命名</li>
+                <li>规范团队命名风格，提高代码可读性</li>
+              </ul>
+
+              <h3>如何使用：</h3>
+              <ol>
+                <li>在设置中配置阿里云API Key</li>
+                <li>选中需要转换的中文描述</li>
+                <li>右键点击"智能重命名"</li>
+                <li>自动替换为合适的变量名或函数名</li>
+              </ol>
+
+              <p>详细使用说明请查看：<a href="https://github.com/itZONK/naming-plugin">使用文档</a></p>
+            ]]></description>
     <change-notes><![CDATA[
-              <!-- 更新日志内容保持不变 -->
-    ]]></change-notes>
+        <h3>版本 1.2</h3>
+        <ul>
+          <li>添加友好的错误提示弹窗</li>
+          <li>优化后台任务处理，避免UI卡顿</li>
+          <li>完善使用文档和设置说明</li>
+        </ul>
+
+        <h3>版本 1.1</h3>
+        <ul>
+          <li>添加模型选择下拉框，支持更多阿里云模型</li>
+          <li>优化设置界面布局</li>
+        </ul>
+
+        <h3>版本 1.0</h3>
+        <ul>
+          <li>初始版本，支持基本的智能重命名功能</li>
+          <li>支持API Key配置和提示词自定义</li>
+        </ul>
+      ]]></change-notes>
 
     <!-- Product and plugin compatibility requirements -->
     <depends>com.intellij.modules.platform</depends>
