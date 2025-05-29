@@ -1,4 +1,4 @@
-rootProject.name = "test_plugin"
+rootProject.name = "naming"
 include("naming")
 
 pluginManagement {

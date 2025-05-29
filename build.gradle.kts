@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.namingPlugin"
-version = "1.1-SNAPSHOT"
+version = "1.2"
 
 repositories {
     mavenCentral()
@@ -40,11 +40,26 @@ tasks {
     }
 
     withType<JavaCompile> {
+        options.encoding = "UTF-8"
         sourceCompatibility = "17"
         targetCompatibility = "17"
     }
 
     withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
         kotlinOptions.jvmTarget = "17"
+        kotlinOptions.freeCompilerArgs += listOf("-Xjvm-default=all")
     }
+
+    withType<Jar> {
+        from("src/main/resources") {
+            include("**/*")
+            includeEmptyDirs = false
+        }
+    }
+
+    // 处理资源文件编码
+    processResources {
+        filteringCharset = "UTF-8"
+    }
+
 }
