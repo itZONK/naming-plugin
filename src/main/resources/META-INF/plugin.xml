@@ -80,4 +80,5 @@
             <keyboard-shortcut keymap="$default" first-keystroke="alt R"/>
         </action>
     </actions>
+    <icon src="/icons/rename_logo.png"/>
 </idea-plugin>
