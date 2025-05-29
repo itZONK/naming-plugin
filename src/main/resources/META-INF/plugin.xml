@@ -70,7 +70,8 @@
     </extensions>
 
     <applicationListeners>
-        <listener class="com.namingplugin.naming.listener.MyKeyListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+        <listener class="com.namingplugin.naming.listener.MyKeyListener"
+                  topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
 
     <actions>
